@@ -1,0 +1,7 @@
+<app-add-student (StudentToAdd)="addStudent($event)"></app-add-student>
+<h2> Liste des étudiants de {{ nom }} </h2>
+<ul>
+  <li *ngFor="let student of students">
+    {{ student.prenom }} {{ student.nom }}
+  </li>
+</ul>
